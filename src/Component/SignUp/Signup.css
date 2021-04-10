@@ -1,0 +1,153 @@
+.sign {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* filter: blur(8px);
+  -webkit-filter: blur(8px); */
+}
+
+.sign__container {
+    max-width:400px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:1em;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.sign__container > form{
+    display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap:20px;
+}
+
+.sign__container > h4 {
+    font-weight: 500;
+    margin-bottom: 20px;
+  }
+
+.sign__container > form > h6 {
+    margin-bottom: 5px;
+}
+
+input:not(:focus):valid 
+
+.birth__one{
+    display: flex;
+    justify-content: center;
+    font-size: 10px;
+}
+
+
+.sex{
+    margin-top: 9px;
+}
+
+.sex__input{
+    margin-right: 30px;
+}
+
+.first{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+.main{
+    height: 33px;
+    margin-left: 10px;
+    /* background-color: white; */
+    border: none;
+    width: 20%;
+
+  }
+
+  .first__name{
+      margin-top: 7px;
+  }
+
+  .floating-label-group {
+	position: relative;
+	margin-top: 15px;
+	margin-bottom: 25px;
+}
+
+    .floating-label {
+		font-size: 15px;
+		color: #cccccc;
+		position: absolute;
+		pointer-events: none;
+		top: 9px;
+		left: 12px;
+		transition: all 0.1s ease;
+	}
+
+	input:focus ~ .floating-label,
+	input:not(:focus):valid ~ .floating-label {
+		top: -15px;
+		bottom: 0px;
+		left: 0px;
+		font-size: 11px;
+		opacity: 1;
+		color: #404040;
+	}
+
+
+.row {
+	margin-top: 50px;
+}
+
+
+.nice{
+    margin-top: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    grid-column: 1 / 3;
+}
+
+.sign__container >label {
+    margin-top: 15px;   
+    font-size: 12px;
+}
+
+.form > label{
+    display:block;
+}
+
+.sign__signInButton {
+    background: #e7c264;
+    border-radius: 2px;
+    width: 60%;
+    height: 30px;
+    border: 1px solid;
+    margin-top: 10px;
+    margin-left: 84px;
+    border-color: #a88734 #9c7e31 #846a29;
+    text-transform: uppercase;
+    grid-column: 1 / 3;
+   
+  }
+
+  .sign__signInButton:hover ,.sign__signInButton:focus {
+    background:#f3c34a;
+    color:#fff;
+    outline:0;
+    transition: background-color 2s ease-out;
+  }
+
+
+  /* LARGE SCREENS */
+@media(min-width:700px){
+    .wrapper{
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+    }}
